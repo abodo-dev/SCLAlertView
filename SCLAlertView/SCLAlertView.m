@@ -68,6 +68,8 @@ CGFloat kTitleHeight;
 // Timer
 NSTimer *durationTimer;
 
+@synthesize contentView = _contentView;
+
 #pragma mark - Initialization
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
@@ -136,7 +138,7 @@ NSTimer *durationTimer;
         _contentView.backgroundColor = [UIColor whiteColor];
         _contentView.layer.cornerRadius = 5.0f;
         _contentView.layer.masksToBounds = YES;
-        _contentView.layer.borderWidth = 0.5f;
+        //_contentView.layer.borderWidth = 0.5f;
         [_contentView addSubview:_labelTitle];
         [_contentView addSubview:_viewText];
         
@@ -174,7 +176,7 @@ NSTimer *durationTimer;
         self.backgroundViewColor = [UIColor whiteColor];
         _labelTitle.textColor = UIColorFromHEX(0x4D4D4D); //Dark Grey
         _viewText.textColor = UIColorFromHEX(0x4D4D4D); //Dark Grey
-        _contentView.layer.borderColor = UIColorFromHEX(0xCCCCCC).CGColor; //Light Grey
+        //_contentView.layer.borderColor = UIColorFromHEX(0xCCCCCC).CGColor; //Light Grey
     }
     return self;
 }
