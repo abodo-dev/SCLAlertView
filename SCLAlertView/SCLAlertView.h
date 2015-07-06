@@ -178,6 +178,8 @@ typedef NS_ENUM(NSInteger, SCLAlertViewBackground)
  */
 @property (nonatomic) CGRect extensionBounds;
 
+@property (nonatomic, strong) UIView *contentView;
+
 /** Initialize SCLAlertView using a new window.
  *
  * Init with new window
