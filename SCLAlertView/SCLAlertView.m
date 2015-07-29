@@ -681,7 +681,7 @@ NSTimer *durationTimer;
             break;
             
         case Error:
-            viewColor = UIColorFromHEX(0xC1272D);
+            viewColor = [UIColor colorWithRed:151.0/255.0 green:27.0/255.0 blue:30.0/255.0 alpha:1.0];
             iconImage = SCLAlertViewStyleKit.imageOfCross;
             break;
             
